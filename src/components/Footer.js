@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
+  // eslint-disable-next-line no-unused-vars
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
@@ -62,14 +63,16 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
-            <a
+            <li className="social-icons">
+              <a
                 href="mailto:pprinceppatel8383@gmail.com"
-                target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillMail />
-                </a>
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+               <AiFillMail /> 
+              </a>
+            </li>
           </ul>
         </Col>
       </Row>
